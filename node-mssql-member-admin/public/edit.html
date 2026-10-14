@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 정보 수정</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>회원 정보 수정</h1>
+        <form id="edit-form">
+            <label for="id">아이디 (수정 불가)</label>
+            <input type="text" id="id" readonly>
+
+            <label for="name">이름</label>
+            <input type="text" id="name" required>
+
+            <label for="password">새 비밀번호</label>
+            <input type="password" id="password" required>
+
+            <button type="submit" class="primary">저장</button>
+            <button type="button" id="cancel-btn" class="secondary">취소</button>
+            <button type="button" id="delete-btn" class="danger">삭제</button>
+        </form>
+    </div>
+
+    <script src="edit.js"></script>
+</body>
+</html>

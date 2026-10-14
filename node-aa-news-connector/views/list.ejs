@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스 목록</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <h1>RPA 수집 뉴스</h1>
+
+        <div class="actions">
+            <form id="botForm">
+                <input type="text" id="keyword" placeholder="검색어" required>
+                <button type="submit">봇으로 수집</button>
+            </form>
+            <form id="newsForm">
+                <input type="text" id="newsTitle" placeholder="뉴스 제목 직접 추가" required>
+                <button type="submit">추가</button>
+            </form>
+        </div>
+
+        <% if (news.length === 0) { %>
+            <p class="empty">아직 수집된 뉴스가 없습니다.</p>
+        <% } else { %>
+            <ol>
+                <% news.forEach(function (item) { %>
+                    <li>
+                        <% if (item.url && /^https?:\/\//.test(item.url)) { %><a href="<%= item.url %>" target="_blank" rel="noopener"><%= item.newstitle %></a><% } else { %><%= item.newstitle %><% } %>
+                        <% if (item.date) { %><span class="date"><%= item.date %></span><% } %>
+                    </li>
+                <% }) %>
+            </ol>
+        <% } %>
+    </main>
+    <script src="/news.js"></script>
+</body>
+</html>

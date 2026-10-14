@@ -1,0 +1,12 @@
+{
+  "name": "node-llm-chat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

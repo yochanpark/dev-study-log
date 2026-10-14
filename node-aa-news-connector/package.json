@@ -1,0 +1,13 @@
+{
+  "name": "node-aa-news-connector",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file-if-exists=.env app.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

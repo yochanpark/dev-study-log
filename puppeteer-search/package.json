@@ -1,0 +1,11 @@
+{
+  "name": "puppeteer-search",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node search.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

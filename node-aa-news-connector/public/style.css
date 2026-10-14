@@ -1,0 +1,10 @@
+body { font-family: "Nanum Gothic", Arial, sans-serif; background: #f4f4f4; margin: 0; }
+main { max-width: 720px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+h1 { font-size: 22px; margin-top: 0; }
+.actions { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+form { display: flex; gap: 8px; }
+input { flex: 1; padding: 8px; border: 1px solid #ddd; border-radius: 5px; }
+button { padding: 8px 14px; border: none; border-radius: 5px; background: #4e73df; color: #fff; cursor: pointer; }
+li { padding: 8px 0; border-bottom: 1px solid #eee; }
+.date { color: #888; font-size: 12px; margin-left: 8px; }
+.empty { color: #888; }
